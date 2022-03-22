@@ -1,7 +1,7 @@
 # Getting started with Vapor
 ![image](https://user-images.githubusercontent.com/39448332/159543057-36c27fd8-8fcb-4f15-91f1-83ab62f0a803.png)
 
-A small project to understand the basic concepts of Vapor.
+A small project to understand the basic concepts of Vapor with Fluent.
 
 Run Command on Terminal
 
@@ -27,7 +27,7 @@ $dev leaf: No
 refer to this link to install: https://brew.sh/
 ```
 
-4. To enable/disble services for Postgres
+4. To enable/disble services for PostgreSQL
 ```
 $dev brew services start postgresql
 $dev brew services stop postgresql
