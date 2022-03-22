@@ -9,7 +9,15 @@ struct TodoController: RouteCollection {
         todos.group(":todoID") { todo in
             todo.delete(use: delete)
         }
+        todos.group(":id") { todo in
+            todo.get(use: index)
+        }
+        todos.group(":id") { todo in
+            todo.patch(use: index)
+        }
     }
+    
+
 
     func index(req: Request) async throws -> [Todo] {
         try await Todo.query(on: req.db).all()
@@ -28,6 +36,8 @@ struct TodoController: RouteCollection {
         try await todo.delete(on: req.db)
         return .ok
     }
+    
+
 }
 
 
