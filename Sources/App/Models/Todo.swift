@@ -1,6 +1,11 @@
 import Fluent
 import Vapor
 
+// fetch todo by ID & update todo
+// need to define schema
+// schema is name of your table inside your database
+
+
 final class Todo: Model, Content {
     static let schema = "todos"
     
