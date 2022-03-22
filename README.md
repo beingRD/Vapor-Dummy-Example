@@ -5,7 +5,7 @@ A small project to understand the basic concepts of Vapor with Fluent.
 
 Run Command on Terminal
 
-1. To create a new project
+1. To create a new project, the "-n" flag gives you a bare bones template by automatically answering no to all the packages questions.
 ```
 $dev vapor new project_name -n
 $dev vapor --help
